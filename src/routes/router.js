@@ -15,8 +15,8 @@ const perguntaRouter = require('./pergunta');
 router.use('/', perguntaRouter);
 
 // Tema router
-//const temaRouter = require('./tema');
-//router.use('/', temaRouter);
+const temaRouter = require('./tema');
+router.use('/', temaRouter);
 
 module.exports = router;
 

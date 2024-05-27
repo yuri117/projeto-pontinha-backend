@@ -10,7 +10,7 @@ const clubeSchema = new Schema({
         required: true
     },
     imagem: String,
-    perguntas: {
+    temas: {
         type: [temaSchema]
     }
 });

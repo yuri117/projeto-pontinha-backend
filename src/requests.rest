@@ -2,7 +2,7 @@ POST http://localhost:4242/api/pergunta
 Content-Type: application/json
 
 {
-    "id": 1,
+    "cod": 1,
     "alternativa_a": "A velocidade da luz nesse meio é 1,2 vezes mais lenta do que no vácuo.",
     "alternativa_b": "A velocidade da luz nesse meio é 1,2 vezes mais rápida do que no vácuo.",
     "alternativa_c": "A velocidade da luz nesse meio é igual à velocidade da luz no vácuo.",
@@ -16,17 +16,17 @@ Content-Type: application/json
 GET http://localhost:4242/api/pergunta
 
 ###
-GET http://localhost:4242/api/pergunta/6654b3bd2f5a362826ece6c5
+GET http://localhost:4242/api/pergunta/1
 
 ###
-DELETE http://localhost:4242/api/pergunta/6654b3bd2f5a362826ece6c5
+DELETE http://localhost:4242/api/pergunta/1
 
 ###
-PUT http://localhost:4242/api/6654b3bd2f5a362826ece6c1
+PUT http://localhost:4242/api/pergunta/1
 Content-Type: application/json
 
 {
-    "id": 2,
+    "cod": 2,
     "alternativa_a": "A velocidade da luz nesse meio é 1,2 vezes mais lenta do que no vácuo.",
     "alternativa_b": "A velocidade da luz nesse meio é 1,2 vezes mais rápida do que no vácuo.",
     "alternativa_c": "A velocidade da luz nesse meio é igual à velocidade da luz no vácuo.",
@@ -61,4 +61,33 @@ Content-Type: application/json
 {
     "login": "LuizRicardo",
     "senha": "sqlmaster3224"
+}
+
+###
+POST http://localhost:4242/api/tema
+Content-Type: application/json
+
+{
+    "cod": "1",
+    "nome": "Partículas e Ondas",
+    "imagem": "https://s1.static.brasilescola.uol.com.br/be/2020/12/dualidade-onda-particula.jpg"
+}
+
+###
+GET http://localhost:4242/api/tema
+
+###
+GET http://localhost:4242/api/tema/1
+
+###
+DELETE http://localhost:4242/api/tema/2
+
+###
+PUT http://localhost:4242/api/tema/1
+Content-Type: application/json
+
+{
+    "cod": "2",
+    "nome": "Partículas e Ondas",
+    "imagem": "https://s1.static.brasilescola.uol.com.br/be/2020/12/dualidade-onda-particula.jpg"
 }
