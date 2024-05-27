@@ -5,6 +5,10 @@ const { Schema } = mongoose;
 const { temaSchema } = require('./Tema');
 
 const clubeSchema = new Schema({
+    cod: {
+        type: Number,
+        required: true
+    },
     nome: {
         type: String,
         required: true

@@ -80,7 +80,7 @@ GET http://localhost:4242/api/tema
 GET http://localhost:4242/api/tema/1
 
 ###
-DELETE http://localhost:4242/api/tema/2
+DELETE http://localhost:4242/api/tema/1
 
 ###
 PUT http://localhost:4242/api/tema/1
@@ -90,4 +90,33 @@ Content-Type: application/json
     "cod": "2",
     "nome": "Partículas e Ondas",
     "imagem": "https://s1.static.brasilescola.uol.com.br/be/2020/12/dualidade-onda-particula.jpg"
+}
+
+###
+POST http://localhost:4242/api/clube
+Content-Type: application/json
+
+{
+    "cod": "1",
+    "nome": "Clube Ciências Exatas",
+    "imagem": "https://static.studyusa.com/course-category/stem_md_1x.webp"
+}
+
+###
+GET http://localhost:4242/api/clube
+
+###
+GET http://localhost:4242/api/clube/1
+
+###
+DELETE http://localhost:4242/api/clube/1
+
+###
+PUT http://localhost:4242/api/clube/1
+Content-Type: application/json
+
+{   
+    "cod": "2",
+    "nome": "Clube Ciências Exatas",
+    "imagem": "https://static.studyusa.com/course-category/stem_md_1x.webp"
 }

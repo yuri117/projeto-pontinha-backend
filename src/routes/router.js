@@ -3,8 +3,8 @@
 const router = require('express').Router();
 
 // Clube router
-// const clubeRouter = require('./clube');
-// router.use('/', clubeRouter);
+const clubeRouter = require('./clube');
+router.use('/', clubeRouter);
 
 // Coordenador router
 const coordenadorRouter = require('./coordenador');
