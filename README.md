@@ -3,7 +3,7 @@ API para Banco de Dados desenvolvido para o jogo educativo do Projeto Pontinha d
 
 Para rodar a API em localhost, primeiro é necessário instalar as dependências necessárias para runtime:
 
-npm i express mongoose cors
+npm i express mongoose cors bcrypt
 
 Além disso, caso for trabalhar com o desenvolvimento da API, é necessário instalar dependências de desenvolvimento:
 
