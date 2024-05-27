@@ -3,8 +3,8 @@
 const router = require('express').Router();
 
 // Clube router
-const clubeRouter = require('./clube');
-router.use('/', clubeRouter);
+// const clubeRouter = require('./clube');
+// router.use('/', clubeRouter);
 
 // Coordenador router
 const coordenadorRouter = require('./coordenador');
@@ -15,8 +15,8 @@ const perguntaRouter = require('./pergunta');
 router.use('/', perguntaRouter);
 
 // Tema router
-const temaRouter = require('./tema');
-router.use('/', temaRouter);
+//const temaRouter = require('./tema');
+//router.use('/', temaRouter);
 
 module.exports = router;
 

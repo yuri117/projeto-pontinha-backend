@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const perguntaSchema = new Schema({
-    id: {
+    cod: {
         type: Number,
         required: true
     },
